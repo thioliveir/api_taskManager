@@ -1,0 +1,23 @@
+{
+    "compilerOptions": {
+      /* Opções Básicas */
+      "target": "ES2022",                                  /* Define a versão do ECMAScript para o código de saída. */
+      "module": "NodeNext",                               /* Define o sistema de módulo para o código gerado. 'NodeNext' é o recomendado para projetos Node.js modernos. */
+      "lib": ["ES2022", "DOM"],                           /* Inclui bibliotecas de tipos. 'DOM' é útil para os tipos de Express. */
+      "outDir": "./dist",                                 /* Diretório para onde os arquivos de saída serão compilados. */
+      "rootDir": "./src",                                 /* Diretório raiz dos arquivos de entrada. */
+      "strict": true,                                     /* Habilita um conjunto rigoroso de opções de verificação de tipo. Recomendado para código de alta qualidade. */
+      "esModuleInterop": true,                            /* Permite a interoperabilidade entre módulos CommonJS e ES. Essencial para o Express. */
+      "forceConsistentCasingInFileNames": true,           /* Garante que os nomes dos arquivos sejam consistentes. */
+      "skipLibCheck": true,                               /* Ignora a verificação de tipo dos arquivos de declaração (`.d.ts`) de bibliotecas para melhorar o desempenho da compilação. */
+      "resolveJsonModule": true,                          /* Permite a importação de arquivos `.json` como módulos. */
+      "sourceMap": true,                                  /* Gera arquivos de mapa de origem (`.map`) para facilitar a depuração. */
+      "declaration": false,                               /* Impede a geração de arquivos de declaração (`.d.ts`). Atende à sua necessidade de gerar apenas `.js`. */
+      "moduleResolution": "NodeNext",                     /* Define o método de resolução de módulos. 'NodeNext' é o mais moderno. */
+      "paths": {
+        "@/*": ["./src/*"]
+      }
+    },
+    "include": ["src/**/*"],                              /* Define quais arquivos devem ser incluídos na compilação. */
+    "exclude": ["node_modules", "dist"]                   /* Define quais arquivos devem ser excluídos da compilação. */
+  }
